@@ -1097,7 +1097,7 @@ swiper-container{
 	}
 
 	.contact-content iframe {
-		height: 50vh;
+		height: auto;
 		margin-top: 20px;
 		flex:2;
 	}
@@ -1286,7 +1286,7 @@ swiper-container{
 	/*5 - Contact*/
 
 	.contact{
-		height:600px;
+		height:auto;
 	}
 	.contact-content iframe{
 		flex:2
