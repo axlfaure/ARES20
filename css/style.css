@@ -1289,7 +1289,8 @@ swiper-container{
 		height:auto;
 	}
 	.contact-content iframe{
-		flex:2
+		flex:2;
+		height:50vh;
 	}
 	.contact-infos{
 		flex:1
