@@ -1083,7 +1083,7 @@ swiper-container{
 	/*5 - Contact*/
 
 	.contact {
-		height: 700px;
+		height: 500px;
 		padding-bottom: 60px;
 	}
 
@@ -1091,22 +1091,30 @@ swiper-container{
 		align-self: start;
 	}
 
+	.contact-content{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
 	.contact-content iframe {
 		height: 50vh;
 		margin-top: 20px;
+		flex:2;
 	}
 
 	.contact-infos {
 		margin-top: 20px;
-		flex-direction: row;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
 		width: 100%;
+		flex:1.5
 	}
 
 	.info {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: start;
 		margin: 0 30px;
 	}
 }
@@ -1274,4 +1282,17 @@ swiper-container{
 		padding-top: 0px;
 		font-size: 12pt;
 	}
+
+	/*5 - Contact*/
+
+	.contact{
+		height:600px;
+	}
+	.contact-content iframe{
+		flex:2
+	}
+	.contact-infos{
+		flex:1
+	}
+	
 }
