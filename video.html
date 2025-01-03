@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Alpes ressources - Externalisation de paie & RH</title>
+
+	<!-- CSS externe -->
+	<link rel="stylesheet" href="./vendor/aos/aos.css">
+	<link href="./vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<!-- CSS perso -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body style="background-color: #383838;">
+	<!-- Header -->
+	<header class="header" style="background-color:#383838; position: relative; border-radius: 0;">
+		<nav class="main-nav">
+			<a href="#hero" class="logo-mobile"><img src="./img/test/ARES-LOGO.png" alt=""></a>
+			<a href="#hero" class="logo-lg"><img src="./img/test/ARES-LOGO-LG.png" alt=""></a>
+			<div class="menu-btn closed">
+				<div class="menu-btn__burger"></div>
+			</div>
+			<!-- Catégories -->
+			<ul class="nav-links">
+				<li class="nav-li"><a class="nav-item" href="index.html#metier">Notre métier</a></li>
+				<li class="nav-li"><a class="nav-item" href="index.html#qui">L'équipe</a>
+				<li class="nav-li"><a class="nav-item" href="index.html#services">Services</a>
+				<li class="nav-li"><a class="nav-item" href="index.html#clients">Témoignages</a></li>
+				<li class="nav-li"><a class="nav-item" href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe 
+                id="vimeo-player"
+                src="https://player.vimeo.com/video/1043638262?autoplay=1&muted=0" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%; max-height: 90vh;" 
+                title="ARES_Carte-de-voeux-V3">
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            // Attendre le chargement de la page
+            window.addEventListener("load", function () {
+                var iframe = document.getElementById('vimeo-player');
+                var player = new Vimeo.Player(iframe);
+        
+                // Lancer la vidéo en mode plein écran automatiquement
+                player.ready().then(function() {
+                    player.play().then(function() {
+                        iframe.requestFullscreen(); // Demande le mode plein écran
+                    }).catch(function(error) {
+                        console.error('Erreur lors de la lecture automatique :', error);
+                    });
+                });
+            });
+        </script>
+    </main>
+    <footer class="footer">
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-col">
+					<h4>Menu</h4>
+					<ul class="footer-nav">
+						<li><a href="index.html#hero">Accueil</a></li>
+						<li><a href="index.html#metier">Notre métier</a></li>
+						<li><a href="index.html#qui">L'équipe</a></li>
+						<li><a href="index.html#services">Nos services</a></li>
+						<li><a href="index.html#clients">Témoignages</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Informations</h4>
+					<ul class="footer-nav">
+						<li><a href="mentions-legales.html#credits" target="_blank">Crédits</a></li>
+						<li><a href="mentions-legales.html#mentions" target="_blank">Mentions légales</a></li>
+						<li><a href="mentions-legales.html#prop" target="_blank">Propriété intellectuelle</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Suivez notre actualité</h4>
+					<div class="social-links">
+						<div class="flex">
+							<a target="_blank" href="https://www.facebook.com/Alpes-Ressources-205218192168/"><i
+									class="fab fa-facebook-f"></i></a>
+							<p>Alpes Ressources</p>
+						</div>
+						<div class="flex">
+							<a target="_blank" href="https://www.linkedin.com/in/brigitte-le-bail-6704a417b/"><i
+									class="fab fa-linkedin-in"></i></a>
+							<p>Brigitte Le Bail</p>
+						</div>
+						<div class="flex">
+							<a target="_blank" href="https://www.linkedin.com/in/olivier-le-bail-909706230/"><i
+									class="fab fa-linkedin-in"></i></a>
+							<p>Olivier Le Bail</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Librairies -->
+	<script src="vendor/isotope.pkgd.js" defer></script>
+	<script src="vendor/aos/aos.js"></script>
+	<script src="./vendor/purecounter/purecounter.js"></script>
+	<script src="./vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+	<!-- Scripts perso -->
+	<script src="js/script.js"></script>
+	<script>AOS.init();</script>
+</body>
+</html>
